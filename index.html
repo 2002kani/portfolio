@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo"> Portfolio.
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar-links">
+            <a href="#home"><span>Home</span></a>
+            <a href="#übermich"> Über mich </a>
+            <a href="#projekte"> Projekte </a>
+            <a href="#kontakt"> Kontakt </a>
+        </ul>
+    </header>
+
+    <section class="home" id="home">
+        <div class="title">
+            <h3> Hallo, Mein Name ist </h3>
+            <h1><span class="auto-type"></span></h1>
+            <p> Willkommen auf meiner Portfolio-Webseite. Hier finden <br>
+                Sie alles relevante bezüglich mir und meinen Projekten </p>
+                <a href="#projekte"><button> Projekte </button></a>
+        </div>
+        <img src="Bilder/Photoroom_20240810_201502.JPG">
+    </section>
+
+
+    <!-- Über Mich Section -->
+
+    <section class="übermich-section" id="übermich">
+        <div class="title">
+            <h2> Über Mich </h2>
+        </div>
+
+        <div class="übermich-center section-center">
+            <article class="übermich-img">
+                <img src="Bilder/IMG_1013 3.jpg">
+            </article>
+
+            <article class="übermich">
+                <div class="btn-container">
+                    <button class="tab-btn active" data-id="skills"> Skills </button>
+                    <button class="tab-btn" data-id="ausbildung"> Ausbildung </button>
+                    <button class="tab-btn" data-id="interessen"> Interessen </button>
+                </div>
+
+                <article class="übermich-content">
+                    <div class="content active" id="skills">
+                      <h4> Web Development </h4>
+                      <p> <i class='bx bxl-html5' ></i> HTML | <i class='bx bxl-css3' ></i> CSS | <i class='bx bxl-javascript'></i> JavaScript </p> <br>
+                      <h4> Weitere Erfahrungen in </h4>
+                      <p> <i class='bx bxl-postgresql' ></i> SQL | <i class='bx bxl-java' ></i> Java | <i class='bx bxl-git' ></i> Git</p>
+                    </div>
+                    <div class="content" id="ausbildung">
+                      <h4> Ausbildung </h4>
+                      <p> <b>2022 - 202X</b>  Fachhochschule Dortmund (Bachelor) </p>
+                      <p> <b>2020 - 2022</b>  Willy Brandt-Gesamtschule (Abitur) </p> 
+                      <p> <b>2015 - 2020</b>  Realschule Oberaden </p>
+                    </div>
+                    <div class="content" id="interessen">
+                      <h4> Interessen </h4>
+                      <p> Nebenbei habe ich auch ein relativ großes Interesse am E-Commerce, was sich zusätzlich in meinem früheren Gewerbe in diesem Bereich widerspiegelte. Außerdem mag ich Sprachen sehr und würde in Zukunft gerne noch mehr lernen. </p>
+                    </div>
+                  </article>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- Projekte Section -->
+
+    <section class="portfolio-section" id="projekte">
+        <div class="center-text">
+            <h2> Derzeitige Projekte </h2>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="row">
+                <a href="https://2002kani.github.io/BildersuchEngine/"><img src="Bilder/Bildschirmfoto 2024-07-30 um 15.41.46.png"></a>
+                <div class="main-row">
+                    <div class="row-text">
+                        <h4> Bildersuch Engine </h4>
+                    </div>
+                    <div class="live-button">
+                        <button> <a href="https://2002kani.github.io/BildersuchEngine/">Live Demo</a> </button>
+                    </div>
+                    <div class="github-button">
+                        <button><a href="https://github.com/2002kani/BildersuchEngine"> Github </a></button>
+                    </div>
+                </div>
+                <p> Eine Bildersuchmaschine mithilfe der Unsplash API entwickelt. </p>
+            </div>
+
+            <div class="row">
+                <a href="https://2002kani.github.io/PianoLogin/"><img src="Bilder/Bildschirmfoto 2024-08-01 um 17.12.50.png"></a>
+                <div class="main-row">
+                    <div class="row-text">
+                        <h4> Piano Formular </h4>
+                    </div>
+                    <div class="live-button">
+                        <button> <a href="https://2002kani.github.io/PianoLogin/">Live Demo</a> </button>
+                    </div>
+                    <div class="github-button">
+                        <button><a href="https://github.com/2002kani/PianoLogin"> Github </a></button>
+                    </div>
+                </div>
+                <p> Kreatives Piano-Formular, bei dem man anstelle des Passworts etwas spielen muss. </p>
+            </div>
+
+            <div class="row">
+                <a href="https://2002kani.github.io/Waehrungsrechner/"><img src="Bilder/Bildschirmfoto 2024-07-30 um 15.43.37.png"></a>
+                <div class="main-row">
+                    <div class="row-text">
+                        <h4> Währungsrechner </h4>
+                    </div>
+                    <div class="live-button">
+                        <button> <a href="https://2002kani.github.io/Waehrungsrechner/">Live Demo</a> </button>
+                    </div>
+                    <div class="github-button">
+                        <button><a href="https://github.com/2002kani/Waehrungsrechner"> Github </a></button>
+                    </div>
+                </div>
+                <p> Simpler Währungsrechner mithilfe einer API entwickelt. Rechnet jeweiligen Betrag um. </p>
+            </div>
+
+            <div class="row">
+                <a href="https://2002kani.github.io/EcomerceWebseite/"><img src="Bilder/Bildschirmfoto 2024-07-30 um 16.38.33.png"></a>
+                <div class="main-row">
+                    <div class="row-text">
+                        <h4> E-Commerce Shop </h4>
+                    </div>
+                    <div class="live-button">
+                        <button> <a href="https://2002kani.github.io/EcomerceWebseite/">Live Demo</a> </button>
+                    </div>
+                    <div class="github-button">
+                        <button><a href="https://github.com/2002kani/EcomerceWebseite"> Github </a></button>
+                    </div>
+                </div>
+                <p> Gemüse beispiels E-Commerce Webseite mit JavaScript Elementen. </p>
+            </div>
+
+            <div class="row">
+                <a href="https://2002kani.github.io/text-to-Voice/"><img src="Bilder/Bildschirmfoto 2024-07-30 um 16.29.09.png"></a>
+                <div class="main-row">
+                    <div class="row-text">
+                        <h4> Text-To-Voice </h4>
+                    </div>
+                    <div class="live-button">
+                        <button> <a href="https://2002kani.github.io/text-to-Voice/">Live Demo</a> </button>
+                    </div>
+                    <div class="github-button">
+                        <button><a href="https://github.com/2002kani/text-to-Voice"> Github </a></button>
+                    </div>
+                </div>
+                <p> Lässt mit einer API den geschriebenen Text durch eine Stimme aufsagen. </p>
+            </div>
+
+            <div class="row">
+                <a href="https://2002kani.github.io/SchereSteinPapier/"><img src="Bilder/Bildschirmfoto 2024-07-30 um 16.31.31.png"></a>
+                <div class="main-row">
+                    <div class="row-text">
+                        <h4> Schere, Stein, Papier </h4>
+                    </div>
+                    <div class="live-button">
+                        <button> <a href="https://2002kani.github.io/SchereSteinPapier/">Live Demo</a> </button>
+                    </div>
+                    <div class="github-button">
+                        <button><a href="https://github.com/2002kani/SchereSteinPapier"> Github </a></button>
+                    </div>
+                </div>
+                <p> Einfaches und sehr simples Schere-Stein-Papier spiel mit einem Counter. </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Kontakt Section -->
+    
+    <section class="kontakt-section" id="kontakt">
+        <div class="title">
+            <h2> Kontaktiere mich </h2>
+        </div>
+
+        <div class="kontakt-form">
+            <form action="">
+                <input type="text" placeholder="Name eingeben" required>
+                <input type="email" placeholder="E-Mail eingeben" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Hier Nachricht schreiben.." required></textarea>
+                <input type="submit" name="" value="Absenden" class="send-btn">
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+
+    <section class="footer" id="footer">
+        <div class="footer-box">
+            <h2> Kontaktiere Mich </h2>
+            <p> +49 176 20585344 <br> kanikaradag02@gmail.com <br> 59192 Bergkamen </p>
+        </div>
+
+        <div class="footer-box">
+            <h2> Schnelle Links </h2>
+            <a href="#home"> Home </a>
+            <a href="#übermich"> Über Mich </a>
+            <a href="#projekte"> Projekte </a>
+            <a href="#kontakt"> Kontakt </a>
+        </div>
+
+        <div class="footer-box">
+            <h2> Social Media </h2>
+            <div class="social">
+                <a href="https://github.com/2002kani"><i class='bx bxl-github'></i></a>
+                <a href="https://linkedin.com/in/kani02"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="copyright-section">
+        <div class="copyright">
+            <p> &#169; 2024 Portfolio | Kani Karadag </p>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
