@@ -3,7 +3,7 @@ var typed = new Typed(".auto-type", {
     typeSpeed: 220,
     backSpeed: 150,
     loop: true
-}); 
+});  
     
 
 const btns = document.querySelectorAll(".tab-btn");
