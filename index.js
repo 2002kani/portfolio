@@ -5,7 +5,7 @@ var typed = new Typed(".auto-type", {
     loop: true
 });  
     
-
+ 
 const btns = document.querySelectorAll(".tab-btn");
 const überMich = document.querySelector(".übermich");
 const contents = document.querySelectorAll(".content");
