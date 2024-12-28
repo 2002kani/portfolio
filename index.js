@@ -10,7 +10,7 @@ const btns = document.querySelectorAll(".tab-btn");
 const überMich = document.querySelector(".übermich");
 const contents = document.querySelectorAll(".content");
 
-überMich.addEventListener("click", function(e){
+überMich.addEventListener("click", function(e){ 
     const id = e.target.dataset.id;
 
     if(id){
