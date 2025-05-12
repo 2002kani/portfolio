@@ -1,0 +1,128 @@
+.wrapper {
+    position: relative;
+    padding-top: 250px;
+    padding-bottom: 80px;
+  }
+
+.logo {
+  position: absolute;
+  top: -190px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+  animation: float 6s ease-in-out infinite;
+  background: white;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.logo:hover{
+  transform: translateY(-10px);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+  
+  @media (max-width: var(--mantine-breakpoint-sm)) {
+    .wrapper {
+      padding-top: 80px;
+      padding-bottom: 60px;
+    }
+  
+    .dots {
+      display: none;
+    }
+  }
+  
+  .inner {
+    position: relative;
+    z-index: 1;
+    padding-top: 130px;
+  }
+  
+  .dots {
+    margin-top: 50px;
+    position: absolute;
+    color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+  }
+  
+  .dotsLeft {
+    left: 0;
+    top: 0;
+  }
+  
+  .title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+    margin-bottom: var(--mantine-spacing-xs);
+    font-family: Outfit, var(--mantine-font-family);
+  }
+
+  @media(max-width: 470px){
+    .logo{
+      width: 240px;
+      height: 240px;
+      top: -130px;
+    }
+
+    .wrapper {
+      position: relative;
+      padding-top: 180px;
+      padding-bottom: 80px;
+    }
+  }
+  
+  @media (max-width: var(--mantine-breakpoint-xs)) {
+    .title {
+      font-size: 28px;
+      text-align: left;
+    }
+  
+    .description {
+      text-align: left;
+      font-size: var(--mantine-font-size-md);
+    }
+  
+    .controls {
+      flex-direction: column;
+    }
+  
+    .control {
+      height: 42px;
+      font-size: var(--mantine-font-size-md);
+    }
+  
+    .control:not(:first-of-type) {
+      margin-top: var(--mantine-spacing-md);
+      margin-left: 0;
+    }
+  }
+  
+  .highlight {
+    color: light-dark(var(--mantine-color-blue-6), var(--mantine-color-blue-4));
+  }
+  
+  .description {
+    text-align: center;
+  }
+  
+  .controls {
+    margin-top: var(--mantine-spacing-lg);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .control:not(:first-of-type) {
+    margin-left: var(--mantine-spacing-md);
+  }
